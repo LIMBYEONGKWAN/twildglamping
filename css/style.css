@@ -1,0 +1,427 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #484848;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'S-CoreDream-3Light';
+    font-size: 16px;
+    line-height: 24px;
+    min-width: 1240px;
+}
+
+#header {
+    margin: 0 auto;
+    width: 1240px;
+    height: 100px;
+    
+
+}
+
+.logo {
+    float: left;
+    padding-top: 15px;
+
+}
+
+.gnb {
+    float: right;
+    padding-top: 40px;
+}
+
+.gnb> li {
+    float: left;
+}
+
+.gnb> li> a {
+    display: block;
+    margin: 0 45px;
+    padding: 4px 6px 32px;
+}
+
+.gnb> li> a:hover{
+    color: #4F6393;
+    font-weight: bold;
+    
+}
+
+.submenu li a{
+    display: block;
+    padding: 10px 15px;
+    background-color: rgba(219, 216, 216, 0.849);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-top: 1px solid rgba(255,255,255,0.3);
+    text-align: center;
+}
+.submenu li a:hover{
+    background-color: skyblue;
+    color: #fff;
+}
+.submenu{
+    display: none;/*안보이게한다!!*/
+}
+/*gnb li에 마우스를 올리면, 자식인 submenu가 보인다!!*/
+.gnb li:hover .submenu{
+    display: block;
+}
+
+
+#banner {
+
+    height: 850px;
+    background-image: url(../images/Main/header/m_ban.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#section1 {
+    width: 1240px;
+    margin: 0 auto;
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+.s1_ban {
+    float: left;
+}
+
+.s1_text {
+    float: right;
+}
+
+.s1_1 {
+    padding-top: 30px;
+    padding-bottom: 150px;
+}
+
+.s1_2 {
+    text-align: center;
+}
+
+
+#section2 {
+    width: 1240px;
+    margin: 0 auto;
+    height: 580px;
+
+}
+
+.s2_text {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+
+.s2_menu li {
+    float: left;
+    text-align: center;
+
+}
+
+.s2_menu p {
+    padding-top: 20px;
+    font-size: 18px;
+}
+
+.s2_menu div {
+    
+    width: 400px;
+    height: 260px;
+    
+}
+
+.menu {
+    
+    margin-bottom: 10px;
+}
+
+.s2_menu li img {
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.s2_menu li:nth-child(2) {
+    margin: 0 20px;
+}
+
+.s2_menu li img:hover{
+    transform: scale(1.1);
+      
+}
+
+.s2_menu li img{
+    transition: transform 1s;
+}
+
+
+
+#section3_wrap {
+    clear: both;
+    margin: 100px 0;
+    height: 950px;
+    background-color: #EEF4F5;
+}
+
+.section3 {
+    width: 1240px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section3 h2 {
+    padding: 120px 0;
+    color: #4F6393;
+    font-size: 35px;
+}
+
+.section3 span {
+    font-size: 60px;
+    font-weight: bold;
+    color: #D99E52;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.s3_img {
+    overflow: hidden;
+    
+}
+
+.s3_img> div {
+    display: block;
+    float: left;
+    height: 485px;
+    overflow: hidden;
+    border-radius: 100px;
+    position: relative;
+}
+
+.p_text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    padding-top: 200px;
+    box-sizing: border-box; 
+    opacity: 0; 
+}
+
+.p_text h3{
+    padding-bottom: 10px;
+}
+
+.s3_img a:hover .p_text{
+    opacity: 1;
+    transform: scale(1.2);
+    transition: all 1s;
+}
+
+
+
+.s3_img> div:nth-child(2) {
+    margin: 0 37.5px;
+    margin-top: 50px;
+    
+}
+
+.s3_img> div:nth-child(4) {
+    margin: 0 37.5px;
+    margin-top: 50px;
+    
+    
+}
+
+
+.img1{}
+
+.img2 {
+    margin-top: 20px;
+}
+
+.s3_fot {
+    clear: both;
+    display: inline-block;
+    margin-top: 70px;
+    
+
+}
+
+.s3_fot a {
+    color: #4F6393;
+}
+
+.s3_fot a img:hover{
+    
+}
+
+#section4_wrap {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.section4 {
+    overflow: hidden;
+}
+
+.section4 img {
+    box-sizing: border-box;
+    border-radius: 50px 0 50px 0;
+}
+
+.s4_img {
+    float: left;
+    width: 600px;
+
+}
+
+.s4_img img {
+    width: 100%;
+}
+
+.s4_text {
+    font-family: Sitka Display;
+    float: right;
+    width: 630px;
+    text-align: center;
+}
+
+.section4 h3 {
+    font-size: 30px;
+    color: #6A98C5;
+    padding-top: 120px;
+
+}
+
+.section4 p {
+    padding: 20px 0 60px;
+
+}
+
+.section4 span {
+    color: #696C73;
+    display: inline-block;
+    border: 1px solid #707070;
+    padding: 12px 20px 10px;
+    border-radius: 20px;
+    
+}
+
+.section4 span a:hover{
+    color: #4F6393;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.s4_text_1 {
+    clear: both;
+    float: left;
+    width: 630px;
+    font-family: Sitka Display;
+    text-align: center;
+}
+
+.s4_text_1 h3 {
+    color: #D99E52;
+}
+
+.s4_text_1 span a:hover{
+    color: #4F6393;
+    font-weight: bold;
+}
+
+
+
+.s4_img_1 {
+    float: right;
+    width: 600px;
+
+}
+
+.s4_img_1 img {
+    width: 100%;
+}
+
+.co2 {
+    clear: both;
+    padding: 100px 0;
+}
+
+#end {
+    clear: both;
+    padding: 140px 0;
+    text-align: center;
+}
+
+#end p {
+    padding: 15px 0;
+}
+
+.ma_t {
+    font-family: Sitka Display;
+    font-size: 55px;
+    line-height: 60px;
+    color: #707070;
+
+}
+
+.dot {
+    color: #000000;
+}
+
+.su_t {
+    font-size: 18px;
+    color: #C4C4C4;
+}
+
+#footer_wrap {
+    height: 220px;
+    background-color: #BABBBF;
+}
+
+.footer {
+    width: 1240px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.fo_1 {
+    color: #E8E7E7;
+    padding-top: 40px;
+    padding-left: 150px;
+    background-image: url(../images/Main/footer/fologo.png);
+    background-position: left 35px;
+    background-repeat: no-repeat;
+
+}
+
+.sns {
+    position: absolute;
+    top: 15px;
+    right: 0;
+}
+
+.sns li {
+    float: left;
+    padding: 0 8px;
+}
